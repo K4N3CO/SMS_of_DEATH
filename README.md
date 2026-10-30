@@ -60,6 +60,40 @@ that process, with a brief loss of signal.
 
 ---
 
+## Workaround / fix
+
+Run each step over ADB during the short window after boot completes (adb shell getprop sys.boot_completed returns 1).
+
+Find the bad entries. Look for WAP Push rows (destination_port=134020) and note their address:
+```
+adb shell content query --uri content://sms/raw --projection _id:destination_port:date:deleted
+```
+Allow the shell to edit SMS storage:
+```
+adb shell cmd appops set com.android.shell WRITE_SMS allow
+```
+Delete only those entries. Replace <SENDER> with the address from step 1:
+```
+adb shell "content delete --uri content://sms/raw --where \"address='<SENDER>'\""
+```
+Check that they're gone by re-running the query from step 1.
+
+Reset the permission:
+```
+adb shell cmd appops set com.android.shell WRITE_SMS default
+```
+No factory reset is needed. Don't choose wipe at the recovery prompt.
+
+Last resort, which erases all SMS/MMS and APN settings:
+```
+adb shell pm clear com.android.providers.telephony
+```
+
+### Expected behavior
+A WAP Push PDU with an invalid length should be dropped and removed from the raw queue, not crash com.android.phone and put the device into a reboot loop.
+
+
+
 ## Disclaimer
 
 For **authorized security research** and **testing on devices you own or have explicit
