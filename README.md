@@ -29,8 +29,8 @@ emergency calls, with no interaction from the victim.
 
 Output: `app/build/outputs/apk/debug/app-debug.apk`
 
-Requires an Android SDK. Create `local.properties` with your SDK path (Android Studio
-does this automatically):
+Requires Android SDK. Create `local.properties` with your SDK path *(Android Studio
+does this automatically)*:
 
 ```
 sdk.dir=/path/to/Android/sdk
@@ -45,9 +45,10 @@ sdk.dir=/path/to/Android/sdk
 
 ## Use
 
-Install on a sender device, enter (or auto-fill from an active SIM) the target number,
-pick the sending SIM, and tap **SEND CRASH SMS**. Observe on the target:
+Install on a sender device, enter *(or auto-fill from an active SIM)* the target number,
+pick the sending SIM, and tap **EXECUTE WAP PUSH CRASH**. 
 
+### Observe on the target:
 ```
 adb logcat | grep -E 'NegativeArraySize|WapPushOverSms|com.android.phone'
 ```
@@ -60,11 +61,11 @@ that process, with a brief loss of signal.
 
 ---
 
-## Workaround / fix
+## Workaround / Fix
 
-Run each step over ADB during the short window after boot completes (adb shell getprop sys.boot_completed returns 1).
+Run each step over ADB during the short window after boot completes *(adb shell getprop sys.boot_completed returns 1)*.
 
-Find the bad entries. Look for WAP Push rows (destination_port=134020) and note their address:
+Find the bad entries. Look for WAP Push rows *(destination_port=134020)* and note their address:
 ```
 adb shell content query --uri content://sms/raw --projection _id:destination_port:date:deleted
 ```
@@ -90,9 +91,9 @@ adb shell pm clear com.android.providers.telephony
 ```
 
 ### Expected behavior
-A WAP Push PDU with an invalid length should be dropped and removed from the raw queue, not crash com.android.phone and put the device into a reboot loop.
+A WAP Push PDU with an invalid length should be dropped and removed from the raw queue, not crash `com.android.phone` and put the device into a reboot loop.
 
-
+---
 
 ## Disclaimer
 
