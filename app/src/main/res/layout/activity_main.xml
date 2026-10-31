@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#090909"
+    android:background="#040404"
     android:fillViewport="true"
     android:padding="16dp">
 
@@ -16,137 +16,225 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="12dp"
             android:fontFamily="@font/orbitron"
             android:gravity="center"
             android:text="Zero-Click Silent Modem Crash"
-            android:textColor="#2CCDD0"
-            android:textSize="20sp"
+            android:textColor="#30EBEF"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <!-- Header / Banner -->
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="210dp"
-            android:layout_marginTop="4dp"
+            android:layout_width="362dp"
+            android:layout_height="213dp"
+            android:layout_gravity="center"
             android:src="@drawable/screenshot_2026_10_30_at_1_05_09pm" />
 
         <!-- Subtitle under logo -->
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:layout_marginTop="4dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="5dp"
             android:fontFamily="@font/orbitron"
             android:gravity="center"
-            android:text="Android Radio &amp; Telephony Exploit"
+            android:text="- Android Radio &amp; Telephony Exploit -"
             android:textColor="#F8F5F5"
-            android:textSize="15sp"
+            android:textSize="19sp"
             android:textStyle="bold" />
 
         <!-- Card: Target Configuration -->
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:background="#0B0B0B"
+            android:layout_height="97dp"
+            android:background="#040404"
             android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="235dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="27dp"
                 android:fontFamily="@font/orbitron"
+                android:letterSpacing="0.1"
                 android:text="TARGET PHONE NUMBER"
                 android:textColor="#2CCDD0"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/phoneInput"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="43dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="#46D197"
-                android:fontFamily="monospace"
+                android:backgroundTint="#717875"
+                android:fontFamily="@font/orbitron"
+                android:gravity="center_horizontal"
                 android:hint="e.g. 0401234567"
                 android:inputType="phone"
+                android:letterSpacing="0.2"
                 android:textColor="#FFFFFF"
-                android:textColorHint="#646875"
-                android:textSize="16sp" />
+                android:textColorHint="#717875"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Card: SIM / Interface Selection -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#0D0D0D"
+            android:layout_marginBottom="10dp"
+            android:background="#040404"
             android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="173dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
                 android:fontFamily="@font/orbitron"
-                android:text="TRANSMITTER SIM / SUB_ID"
+                android:letterSpacing="0.1"
+                android:text="TRANSMITTER SIM"
+                android:textAlignment="center"
+                android:textAllCaps="false"
                 android:textColor="#2CCDD0"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/senderSpinner"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="#47CE81" />
+                android:layout_height="51dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#1EE0E9" />
         </LinearLayout>
 
-        <!-- Action Button -->
-        <Button
-            android:id="@+id/sendBtn"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/lab_red"
-            android:fontFamily="@font/orbitron"
-            android:letterSpacing="0.15"
-            android:text="EXECUTE WAP PUSH CRASH"
-            android:textAlignment="viewStart"
-            android:textColor="#FAF8F8"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-        <!-- Console / Telemetry Log -->
+        <!-- Card: Attack Profile / Payload Customizer -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#040404"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="27dp"
+                android:fontFamily="@font/orbitron"
+                android:letterSpacing="0.1"
+                android:text="ATTACK PROFILE / PAYLOAD"
+                android:textAlignment="center"
+                android:textColor="#2CCDD0"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/profileSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2BB8BF" />
+
+            <EditText
+                android:id="@+id/customHexInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#616865"
+                android:fontFamily="monospace"
+                android:gravity="center_horizontal"
+                android:hint="Custom Hex (Optional): 01 06 88 80 00 BE"
+                android:inputType="text"
+                android:letterSpacing="0.1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#646875"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Side-by-Side Pill Buttons Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/repeatBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/pill_button_background_secondary"
+                android:fontFamily="@font/orbitron"
+                android:letterSpacing="0.1"
+                android:text="REPEAT"
+                android:textAlignment="center"
+                android:textColor="#2CCDD0"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/pill_button_background"
+                android:fontFamily="@font/orbitron"
+                android:letterSpacing="0.1"
+                android:text="EXECUTE"
+                android:textAlignment="center"
+                android:textColor="#FBFAFA"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <!-- Console / Telemetry & Delivery Log -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:background="#090909"
-            android:minHeight="150dp"
             android:orientation="vertical"
             android:padding="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="6dp"
                 android:fontFamily="@font/orbitron"
-                android:text="[ TELEMETRY &amp; CONSOLE LOG ]"
+                android:letterSpacing="0.2"
+                android:text="CONSOLE LOG"
                 android:textColor="#2CCDD0"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/status"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="180dp"
+                android:background="#050505"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:fontFamily="monospace"
                 android:lineSpacingExtra="4dp"
+                android:padding="8dp"
+                android:scrollbars="vertical"
                 android:text="System initialized. Awaiting user command..."
-                android:textColor="#ABB4BF"
-                android:textSize="12sp" />
+                android:textColor="#00FF66"
+                android:textIsSelectable="true"
+                android:textSize="11sp" />
         </LinearLayout>
 
     </LinearLayout>
