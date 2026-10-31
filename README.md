@@ -46,7 +46,7 @@ sdk.dir=/path/to/Android/sdk
 ## Use
 
 Install on a sender device, enter *(or auto-fill from an active SIM)* the target number,
-pick the sending SIM, and tap **EXECUTE WAP PUSH CRASH**. 
+pick the sending SIM, and tap **EXECUTE or REPEAT** to send signal **every 1.2 seconds** until stopped.
 
 ### Observe on the target:
 ```
