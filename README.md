@@ -38,7 +38,7 @@ sdk.dir=/path/to/Android/sdk
 <details>
   <summary>📸 Click to View Screenshot of App</summary>
   <br><p align="center">
-  <img src="https://github.com/user-attachments/assets/9932ba05-c794-4c4d-b461-83f56d6321a3" alt="Full Web Page Screenshot" width="30%">
+  <img src="https://github.com/user-attachments/assets/aa5e23e1-f77d-4fb9-a415-33cfb57b9b70" alt="Full Web Page Screenshot" width="30%">
 </details>
 
 ---
