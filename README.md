@@ -1,12 +1,12 @@
 <div align="center">
-
-# SMS_of_DEATH 
-> WAP Push Remote Modem Crash PoC
+<img width="1048" height="420" alt="Screenshot 2026-10-30 at 1 51 24 PM" src="https://github.com/user-attachments/assets/0fe66716-1652-442d-9ab1-f1117d0ad2b5" />
+  
+## WAP Push Remote Modem Crash PoC
 
 [![Android SDK](https://img.shields.io/badge/Android-SDK%2030%E2%80%9335-brightgreen.svg)](https://developer.android.com)
 [![Security Research](https://img.shields.io/badge/Security-Research%20PoC-red.svg)](https://smsofdeath.com)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-<img width="1048" height="420" alt="Screenshot 2026-10-30 at 1 51 24 PM" src="https://github.com/user-attachments/assets/0fe66716-1652-442d-9ab1-f1117d0ad2b5" />
+
 </div>
 
 ## Overview
