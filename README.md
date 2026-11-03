@@ -21,7 +21,15 @@ emergency calls, with no interaction from the victim.
 
 ---
 
-## Build
+## Quickstart
+
+**Download** the `SMS_of_DEATH.apk` file from the **Releases section**, and **install it onto any Android Device**.
+
+<img src="https://github.com/user-attachments/assets/aa5e23e1-f77d-4fb9-a415-33cfb57b9b70" alt="Full Web Page Screenshot" width="20%">
+
+---
+
+## Build 
 
 ```
 ./gradlew assembleDebug
@@ -34,12 +42,6 @@ does this automatically)*:
 sdk.dir=/path/to/Android/sdk
 ```
 **Retrieve the built** `.apk` in the `app/build/outputs/apk/debug/` **directory**.
-
-<details>
-  <summary>📸 Click to View Screenshot of App</summary>
-  <br><p align="center">
-  <img src="https://github.com/user-attachments/assets/aa5e23e1-f77d-4fb9-a415-33cfb57b9b70" alt="Full Web Page Screenshot" width="30%">
-</details>
 
 ---
 
