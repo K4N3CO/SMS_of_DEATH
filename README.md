@@ -1,6 +1,7 @@
 <div align="center">
 
-# SMS of DEATH (WAP Push Remote Modem Crash PoC)
+# SMS of DEATH 
+> WAP Push Remote Modem Crash PoC
 
 [![Android SDK](https://img.shields.io/badge/Android-SDK%2030%E2%80%9335-brightgreen.svg)](https://developer.android.com)
 [![Security Research](https://img.shields.io/badge/Security-Research%20PoC-red.svg)](https://smsofdeath.com)
@@ -24,7 +25,7 @@ By transmitting a crafted 8-byte WAP Push Protocol Data Unit (PDU) over SMS to t
 
 ## Features
 
-- **Lab-RATS v1.6 Dark UI Dashboard**: Cyberpunk telemetry console with Orbitron typography and custom pill-shaped controls.
+- **Clean Dark UI Dashboard**: High-contrast telemetry console with Orbitron typography and custom pill-shaped controls.
 - **Multi-SIM Transmitter Selection**: Automatically enumerates active subscriptions (`subId` / slot index) for dispatch.
 - **Continuous Repeat Stream**: Automated signal looping at configurable 1.2-second intervals.
 - **Carrier Delivery Monitor**: Real-time network acknowledgment tracking using broadcast delivery receipts (`SMS_SENT` / `SMS_DELIVERED`).
