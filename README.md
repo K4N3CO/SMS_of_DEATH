@@ -19,13 +19,20 @@ By transmitting a crafted 8-byte WAP Push Protocol Data Unit (PDU) over SMS to t
 
 ---
 
-## Features
+## Upgraded Features
 
-- **Clean Dark UI Dashboard**: High-contrast telemetry console with Orbitron typography and custom pill-shaped controls.
+- **Clean Dark UI Dashboard**: High-contrast telemetry console with custom typography & controls.
 - **Multi-SIM Transmitter Selection**: Automatically enumerates active subscriptions *(`subId` / slot index)* for dispatch.
 - **Continuous Repeat Stream**: Automated signal looping at configurable 1.2-second intervals.
 - **Carrier Delivery Monitor**: Real-time network acknowledgment tracking using broadcast delivery receipts *(`SMS_SENT` / `SMS_DELIVERED`)*.
 - **Attack Profile Customizer**: Switch between standard WAP Push Modem Panic *(`01 06 88 80 80 80 00 BE`)* and custom hex fuzzer payloads.
+<details>
+<summary><b>📸 Click To View App Screenshot</b></summary>
+<br>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/7f6bab12-c5a8-4dae-b47c-88ca7d492938" alt="App Screenshot" width="30%">
+</p>
+</details>
 
 ---
 
@@ -40,15 +47,7 @@ By transmitting a crafted 8-byte WAP Push Protocol Data Unit (PDU) over SMS to t
 ## Installation & Quickstart
 
 1. Download the pre-built `SMS_of_DEATH.apk` from the **[Releases Section](../../releases)**.
-2. Sideload and install the APK onto your designated testing Android device.
-
-<details>
-<summary><b>📸 View App Interface Screenshot</b></summary>
-<br>
-<p align="center">
-<img src="https://github.com/user-attachments/assets/7f6bab12-c5a8-4dae-b47c-88ca7d492938" alt="App Screenshot" width="30%">
-</p>
-</details>
+2. Sideload and install the APK onto your **designated Android test device**.
 
 ---
 
